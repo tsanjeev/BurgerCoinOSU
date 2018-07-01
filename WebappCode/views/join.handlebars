@@ -1,0 +1,63 @@
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">BurgerCoin</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Welcome<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/join">Join</a>
+        </li>  
+        <li class="nav-item">
+          <a class="nav-link" href="/transfer">Transfer</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="jumbotron">
+    <h2>Welcome to BurgerCoin!</h2>
+    <p class="lead">If you'd like to use BurgerCoin, you've come to the right place!!  There are a few steps, but they're all easy:</p>
+    
+    <ol>
+      <li><p>The first thing you'll need to do is install an Ethereum wallet.  We highly recommend <a href="https://metamask.io/">MetaMask</a> since it's
+              easy to use and we designed our page with it.  Head over <a href="https://metamask.io/">there</a> to get started.</p></li>
+      <li><p>The second thing you'll need to do is point your MetaMask Wallet to the BurgerCoin Token. Open your wallet, click "Add Token", and copy
+              our address into the "Token Contract Address" field.  Just copy from here: <strong>0x5c87e1c456dcedfab139df81a7ca331bb0c14dda</strong></p></li>
+      <li><p>Strictly speaking, that's it.  You're in!!  Each time you eat at a BurgerCoin-supporting restaurant, give them your address
+              and they will send you tokens.  Later, once you've saved up tokens, you can head over to the <a href="/transfer">Transfer Page</a>
+              to send them to a restaurant of your choosing in exchange for a special burger.</p></li>
+      <li><p>But...  You might not want to wait that long.  Using the form below, you can use Ether to purchase BurgerCoin 
+            and get a jump start on purchasing Special Burgers that can only be bought with BurgerCoin.</p></li>
+      <li><p><strong>Restaurant Owners: </strong> start using BurgerCoin as a promotional for your business.  Buy some BurgerCoin below, give
+                them to your patrons when they eat your burgers, and collect them later.  Tokens are fungible and durable.  Any quantity of tokens you
+                receive in payment can in turn be given to a different customer later.</p></li>
+    </ol>
+    <hr>
+    <p>
+      <strong>Buy BurgerCoin: </strong>
+      Please enter the amount of Ether you'd like to exchange for BurgerCoin.  The current exchane rate is 100 BUR / 1 ETH.
+    </p>
+    <div class="row justify-content-center">
+      <form class="form-inline" id="buy_form">
+        <label class="sr-only" for="buy_form">U_Transfer Address</label>
+        <div class="input-group mb-2 mr-sm-2">
+          <div class="input-group-prepend">
+            <div class="input-group-text"><span class="oi oi-dollar"></span></div>
+          </div>
+          <input type="text" class="form-control" id="buy_amount" name="buy_amount" placeholder="[EtherQuantity]">
+        </div>
+         <button id="buyButton" class="btn btn-primary mb-2">Purchase BUR!</button>
+      </form>
+     
+    </div>
+    <hr class="my-4">
+  </div>
+  <script src="/js/j_bundle.js"></script>
+</div>

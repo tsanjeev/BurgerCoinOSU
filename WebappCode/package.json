@@ -1,0 +1,22 @@
+{
+  "name": "oauth2_implementation",
+  "version": "1.0.0",
+  "description": "OSU CS496 - OAuth 2.0 Implementation",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Pedro Torres-Mackie (torresmp)",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "nodemailer": "^4.6.4",
+    "randomstring": "^1.1.5",
+    "save": "^2.3.2",
+    "sparkpost": "^2.1.2",
+    "xoauth2": "^1.2.0"
+  }
+}

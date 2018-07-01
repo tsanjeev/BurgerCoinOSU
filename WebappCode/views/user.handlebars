@@ -1,0 +1,67 @@
+
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">BurgerCoin</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Welcome<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="/transfer">Transfer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/u_signup">SignUp (User)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/r_signup">SignUp (Restaurant)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/restaurant">Restaurant</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/user">User</a>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>
+  <div class="jumbotron">
+    <h2>Hey there!</h2>
+    <p class="lead">Welcome to the BurgerCoin Project website. Here, you can check your BurgerCoin balance, make transfers, and learn more about BurgerCoin.</p>
+    <p class="text-center" id="token_text"><strong>Token for this contract: </strong></p>
+    <p class="text-center" id="balance_text"><strong>Your current balance is: </strong></p>
+    <p class="text-center" id="meta_text" style="display: none;"><strong>Please install <a href="metamask.io">MetaMask</a> to see your balance and interact with your BUR.</strong></p>
+
+    <hr>
+    <p>
+      <strong>Transfer Coins?: </strong>
+      Please enter an address to send BurgerCoins. (Usually, this will be to a restaurant to eat a special burger.
+      But you could also give them to your buddy, or even buy a car, if you find a dealer who accepts BurgerCoin for cars!)
+    </p>
+    <div class="row justify-content-center">
+      <form class="form-inline" id="u_transfer_form">
+        <label class="sr-only" for="u_transfer_input">U_Transfer Address</label>
+        <div class="input-group mb-2 mr-sm-2">
+          <div class="input-group-prepend">
+            <div class="input-group-text"><span class="oi oi-dollar"></span></div>
+          </div>
+          <input type="text" class="form-control" id="u_transfer_to" name="u_transfer_to" placeholder="[RecipientAccount#]">
+          <input type="text" class="form-control" id="u_transfer_amount" name="u_transfer_amount" placeholder="[amount]">
+        </div>
+         <button id="transferButton" class="btn btn-primary mb-2">Transfer</button>
+      </form>
+     
+    </div>
+    <hr class="my-4">
+  </div>
+  <script src="/js/bundle.js"></script>
+</div>
+
+
